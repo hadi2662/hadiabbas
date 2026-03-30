@@ -359,7 +359,7 @@
             opacity: 0.6;
         }
 
-        .avatar-ring {
+        /* .avatar-ring {
             width: 96px;
             height: 96px;
             border-radius: 50%;
@@ -373,8 +373,12 @@
             color: var(--white);
             margin-bottom: 18px;
             position: relative;
-            z-index: 1;
-        }
+            z-index: 1; 
+            }*/
+
+        /* .avatar-ring img {
+            height: 100px;
+        } */
 
         .hero-card-name {
             font-family: 'Fraunces', serif;
@@ -645,28 +649,8 @@
             transform: scale(1.06);
         }
 
-        .p1 .project-thumb {
-            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
-        }
-
-        .p2 .project-thumb {
+        .project-thumb {
             background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-        }
-
-        .p3 .project-thumb {
-            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
-        }
-
-        .p4 .project-thumb {
-            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-        }
-
-        .p5 .project-thumb {
-            background: linear-gradient(135deg, #ede7f6, #d1c4e9);
-        }
-
-        .p6 .project-thumb {
-            background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
         }
 
         .project-body {
@@ -756,13 +740,8 @@
             justify-content: center;
         }
 
-        .about-image::after {
-            content: 'HA';
-            font-family: 'Fraunces', serif;
-            font-size: 130px;
-            font-weight: 700;
-            color: var(--green);
-            opacity: 0.07;
+        .about-image img {
+            height: 60%;
         }
 
         .about-accent-bar {
@@ -888,7 +867,7 @@
 
         /* Footer */
         footer {
-            background: var(--black);
+            background: #0c0c0cd9;
             color: var(--white);
             padding: 48px 64px;
             display: flex;
@@ -912,7 +891,7 @@
 
         .footer-text {
             font-size: 13px;
-            color: rgba(255, 255, 255, 0.35);
+            color: rgba(255, 255, 255, 0.6);
             font-weight: 300;
         }
 
@@ -925,7 +904,7 @@
             width: 42px;
             height: 42px;
             border-radius: 50%;
-            border: 1.5px solid rgba(255, 255, 255, 0.15);
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -934,11 +913,11 @@
             overflow: hidden;
         }
 
-        .social-link svg {
-            width: 17px;
-            height: 17px;
-            fill: rgba(255, 255, 255, 0.55);
-            transition: fill 0.3s;
+        .social-link img {
+            width: 18px;
+            height: 18px;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
         }
 
         .social-link:hover {
@@ -946,8 +925,8 @@
             background: rgba(255, 255, 255, 0.06);
         }
 
-        .social-link:hover svg {
-            fill: var(--white);
+        .social-link:hover img {
+            opacity: 1;
         }
 
         .reveal {
@@ -1134,9 +1113,9 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-card">
-                    <div class="avatar-ring">HA</div>
+                    <div class="avatar-ring"><img src="./images/hadi-avatar.svg" alt="Hadi Abbas"></div>
                     <div class="hero-card-name">Hadi Abbas</div>
-                    <div class="hero-card-role">Web Developer · Karachi, Pakistan</div>
+                    <div class="hero-card-role">Frontend Developer · Karachi, Pakistan</div>
                     <div class="hero-stats">
                         <div class="stat-box">
                             <div class="stat-num">100%</div>
@@ -1169,7 +1148,7 @@
     <section class="about-section" id="about">
         <div style="max-width:1200px;margin:0 auto;">
             <div class="about-grid">
-                <div class="about-image"></div>
+                <div class="about-image"><img src="./images/hadi-abbas-img.png" alt="Hadi Abbas"></div>
                 <div class="about-text reveal">
                     <div class="section-label">About Me</div>
                     <h2 class="section-title">The Developer<br>Behind the Code</h2>
@@ -1519,40 +1498,23 @@
     <!-- Footer -->
     <footer>
         <a href="#" class="footer-logo">Hadi<span>.</span>Abbas</a>
-        <div class="footer-text">© 2025 Hadi Abbas. All rights reserved.</div>
+        <div class="footer-text">© 2026 Hadi Abbas. All rights reserved.</div>
         <div class="social-links">
             <!-- Facebook -->
-            <a href="#" class="social-link" title="Facebook">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
+            <a href="#" class="social-link" title="Facebook" target="_blank">
+                <img src="./images/facebook-logo.svg" alt="Facebook">
             </a>
             <!-- Instagram -->
-            <a href="#" class="social-link" title="Instagram">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="rgba(255,255,255,0.55)"
-                        stroke-width="2" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none"
-                        stroke="rgba(255,255,255,0.55)" stroke-width="2" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="rgba(255,255,255,0.55)" stroke-width="2"
-                        stroke-linecap="round" />
-                </svg>
+            <a href="https://www.instagram.com/hadi_abbas_824" class="social-link" title="Instagram" target="_blank">
+                <img src="./images/instagram-logo.svg" alt="Instagram">
             </a>
             <!-- Gmail -->
             <a href="mailto:hadiabbas@gmail.com" class="social-link" title="Gmail">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none"
-                        stroke="rgba(255,255,255,0.55)" stroke-width="2" />
-                    <polyline points="22,6 12,13 2,6" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2" />
-                </svg>
+                <img src="./images/mail-logo.svg" alt="Mail">
             </a>
             <!-- LinkedIn -->
-            <a href="#" class="social-link" title="LinkedIn">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                    <rect x="2" y="9" width="4" height="12" />
-                    <circle cx="4" cy="4" r="2" />
-                </svg>
+            <a href="www.linkedin.com/in/hadi-abbas-63522b348" class="social-link" title="LinkedIn" target="_blank">
+                <img src="./images/linkedin-logo.svg" alt="LinkedIn">
             </a>
         </div>
     </footer>
