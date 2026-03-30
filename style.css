@@ -7,6 +7,7 @@
 }
 
 :root {
+    --gold: #FFDF88;
     --white: #ffffff;
     --off-white: #f8f7f3;
     --cream: #edeae0;
@@ -104,7 +105,7 @@ nav.scrolled {
 }
 
 .nav-links a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--gray);
     text-decoration: none;
@@ -119,12 +120,12 @@ nav.scrolled {
     left: 0;
     width: 0;
     height: 1.5px;
-    background: var(--black);
+    background: var(--green);
     transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--black);
+    color: var(--green);
 }
 
 .nav-links a:hover::after {
@@ -132,7 +133,7 @@ nav.scrolled {
 }
 
 .nav-cta {
-    background: var(--black);
+    background: var(--green);
     color: var(--white);
     padding: 10px 22px;
     border-radius: 50px;
@@ -143,8 +144,9 @@ nav.scrolled {
 }
 
 .nav-cta:hover {
-    background: var(--green);
-    transform: translateY(-1px);
+    background: #FFDF88;
+    color: var(--green);
+    transform: scale(1.1);
 }
 
 .hamburger {
@@ -275,9 +277,9 @@ nav.scrolled {
 }
 
 .btn-primary {
-    background: var(--black);
+    background: var(--green);
     color: var(--white);
-    padding: 16px 32px;
+    padding: 12px 32px;
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;
@@ -289,26 +291,27 @@ nav.scrolled {
 }
 
 .btn-primary:hover {
-    background: var(--green);
-    transform: translateY(-2px);
+    background: var(--gold);
+    color: var(--green);
+    transform: translateY(-1px);
     box-shadow: var(--shadow-hover);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--black);
-    padding: 16px 32px;
+    color: var(--green);
+    padding: 12px 32px;
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
-    border: 1.5px solid rgba(0, 0, 0, 0.12);
+    border: 1.5px solid #2e6b4e65;
     transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    border-color: var(--black);
-    transform: translateY(-2px);
+    border-color: var(--green);
+    transform: translateY(-1px);
 }
 
 .hero-visual {
@@ -651,12 +654,13 @@ section {
     text-decoration: none;
     padding: 9px 18px;
     border-radius: 50px;
-    background: var(--black);
+    background: var(--green);
     transition: all 0.3s ease;
 }
 
 .link-btn:hover {
-    background: var(--green);
+    background: var(--gold);
+    color: var(--green);
     transform: translateY(-1px);
 }
 
@@ -793,7 +797,7 @@ textarea {
 
 .form-btn {
     width: 100%;
-    background: var(--black);
+    background: var(--green);
     color: var(--white);
     padding: 16px;
     border-radius: var(--radius-sm);
@@ -807,13 +811,14 @@ textarea {
 }
 
 .form-btn:hover {
-    background: var(--green);
-    transform: translateY(-2px);
+    background: var(--gold);
+    color: var(--green);
+    transform: translateY(-1px);
 }
 
 /* Footer */
 footer {
-    background: #0c0c0cd9;
+    background: var(--green);
     color: var(--white);
     padding: 48px 64px;
     display: flex;
@@ -832,12 +837,12 @@ footer {
 }
 
 .footer-logo span {
-    color: var(--green);
+    color: var(--gold);
 }
 
 .footer-text {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 300;
 }
 
