@@ -93,23 +93,6 @@ nav.scrolled {
     margin: auto;
 }
 
-/* .nav-logo {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 22px;
-    color: var(--black);
-    text-decoration: none;
-    letter-spacing: -0.5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-.nav-logo span {
-    color: var(--green);
-} */
-
 .nav-logo img {
     height: 60px;
 }
@@ -355,27 +338,6 @@ nav.scrolled {
     opacity: 0.6;
 }
 
-/* .avatar-ring {
-            width: 96px;
-            height: 96px;
-            border-radius: 50%;
-            background: var(--green);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Fraunces', serif;
-            font-size: 34px;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 18px;
-            position: relative;
-            z-index: 1; 
-            }*/
-
-/* .avatar-ring img {
-            height: 100px;
-        } */
-
 .hero-card-name {
     font-family: 'Fraunces', serif;
     font-size: 24px;
@@ -418,13 +380,13 @@ nav.scrolled {
 
 .floating-chip {
     position: absolute;
-    background: var(--white);
-    border: 1px solid var(--border);
+    background: var(--green);
+    border: 1px solid var(--green);
     border-radius: 50px;
     padding: 8px 14px;
     font-size: 12px;
-    font-weight: 600;
-    color: var(--dark);
+    font-weight: 500;
+    color: var(--white);
     box-shadow: var(--shadow);
     animation: float 3s ease-in-out infinite;
 }
@@ -590,19 +552,14 @@ section {
 }
 
 .project-thumb {
-    height: 210px;
-    position: relative;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .browser-bar {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     height: 30px;
     background: rgba(255, 255, 255, 0.95);
     display: flex;
@@ -610,7 +567,7 @@ section {
     padding: 0 14px;
     gap: 6px;
     border-bottom: 1px solid var(--border);
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .dot {
@@ -632,21 +589,12 @@ section {
 }
 
 .project-preview {
-    position: absolute;
-    inset: 30px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 52px;
-    transition: transform 0.4s ease;
+    
+    overflow: hidden;
 }
 
-.project-card:hover .project-preview {
-    transform: scale(1.06);
-}
-
-.project-thumb {
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+.project-preview img {
+    width: 100%;
 }
 
 .project-body {
