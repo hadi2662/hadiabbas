@@ -1,3 +1,7 @@
+@media (hover: none), (pointer: coarse) {
+    #cursor, #cursor-follower { display: none !important; }
+}
+
 *,
 *::before,
 *::after {
