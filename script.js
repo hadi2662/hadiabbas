@@ -1,18 +1,23 @@
+const isTouchDevice = window.matchMedia('(hover: none), (pointer: coarse)').matches;
 
-const cursor = document.getElementById('cursor');
-const follower = document.getElementById('cursor-follower');
-document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    setTimeout(() => {
-        follower.style.left = e.clientX + 'px';
-        follower.style.top = e.clientY + 'px';
-    }, 80);
-});
-document.querySelectorAll('a,button,.project-card,.skill-card').forEach(el => {
-    el.addEventListener('mouseenter', () => follower.classList.add('hover'));
-    el.addEventListener('mouseleave', () => follower.classList.remove('hover'));
-});
+if (!isTouchDevice) {
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('cursor-follower');
+
+    document.addEventListener('mousemove', e => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        setTimeout(() => {
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
+        }, 80);
+    });
+
+    document.querySelectorAll('a,button,.project-card,.skill-card').forEach(el => {
+        el.addEventListener('mouseenter', () => follower.classList.add('hover'));
+        el.addEventListener('mouseleave', () => follower.classList.remove('hover'));
+    });
+}
 
 window.addEventListener('scroll', () => {
     document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
